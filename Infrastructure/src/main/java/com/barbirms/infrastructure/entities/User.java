@@ -1,5 +1,7 @@
 package com.barbirms.infrastructure.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.List;
@@ -12,14 +14,15 @@ public class User {
     private Long id;
 
     private String username;
-    private String password;
+    private int password;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL)
+    @JsonBackReference
     private List<Habit> habits;
 
     public User(String username, String password) {
         this.username = username;
-        this.password = password;
+        this.password = password.hashCode();
     }
 
     public User() {
@@ -34,7 +37,7 @@ public class User {
         return username;
     }
 
-    public String getPassword() {
+    public int getPassword() {
         return password;
     }
 

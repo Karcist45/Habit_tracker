@@ -1,6 +1,5 @@
-package com.barbirms.service;
+package com.barbirms.service.interfaces;
 
-import com.barbirms.infrastructure.entities.User;
 import com.barbirms.service.DTOs.UserDTO;
 import org.springframework.stereotype.Service;
 

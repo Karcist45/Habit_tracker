@@ -1,7 +1,7 @@
 package com.barbirms.presentation.controllers;
 
 import com.barbirms.service.DTOs.UserDTO;
-import com.barbirms.service.UserService;
+import com.barbirms.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

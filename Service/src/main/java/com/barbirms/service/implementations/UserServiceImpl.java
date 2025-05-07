@@ -1,8 +1,9 @@
-package com.barbirms.service;
+package com.barbirms.service.implementations;
 
 import com.barbirms.infrastructure.entities.User;
 import com.barbirms.infrastructure.repositories.UserRepository;
 import com.barbirms.service.DTOs.UserDTO;
+import com.barbirms.service.interfaces.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

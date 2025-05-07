@@ -1,5 +1,6 @@
 package com.barbirms.infrastructure.entities;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -16,5 +17,6 @@ public class HabitRecord {
     private Timestamp timestamp;
 
     @ManyToOne
+    @JsonBackReference
     private Habit habit;
 }

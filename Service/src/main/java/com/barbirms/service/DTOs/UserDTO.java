@@ -9,13 +9,13 @@ import java.util.List;
 public class UserDTO {
     public Long id;
     public String username;
-    public String password;
+    public int password;
     public List<Habit> habits;
 
     public UserDTO(User user) {
-        this.id = user.getId();
-        this.username = user.getUsername();
-        this.password = user.getPassword();
-        this.habits = user.getHabits();
+        id = user.getId();
+        username = user.getUsername();
+        password = user.getPassword();
+        habits = user.getHabits();
     }
 }
