@@ -1,4 +1,4 @@
-package com.barbirms.habit_tracker;
+package com.barbirms;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
