@@ -1,14 +1,9 @@
 package com.barbirms.service.implementations;
 
 import com.barbirms.infrastructure.entities.Habit;
-import com.barbirms.infrastructure.entities.HabitRecord;
-import com.barbirms.infrastructure.entities.User;
-import com.barbirms.infrastructure.repositories.HabitRecordRepository;
 import com.barbirms.infrastructure.repositories.HabitRepository;
 import com.barbirms.infrastructure.repositories.UserRepository;
 import com.barbirms.service.DTOs.HabitDTO;
-import com.barbirms.service.DTOs.HabitRecordDTO;
-import com.barbirms.service.DTOs.UserDTO;
 import com.barbirms.service.interfaces.HabitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

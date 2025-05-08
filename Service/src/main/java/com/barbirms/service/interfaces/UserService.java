@@ -7,9 +7,9 @@ import java.util.List;
 
 @Service
 public interface UserService {
-    public void CreateUser (String username, String password);
+    void CreateUser (String username, String password, String email);
 
-    public UserDTO GetUserInfo (String username);
+    UserDTO GetUserInfo (String username);
 
-    public List<UserDTO> GetAllUsers();
+    List<UserDTO> GetAllUsers();
 }

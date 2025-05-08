@@ -1,7 +1,6 @@
 package com.barbirms.infrastructure.entities;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import jakarta.annotation.Nullable;
 import jakarta.persistence.*;
 
 import java.sql.Timestamp;
@@ -19,7 +18,7 @@ public class HabitRecord {
     @JsonBackReference
     private Habit habit;
 
-    public HabitRecord() {};
+    public HabitRecord() {}
 
     public HabitRecord(Habit habit) {
         this.habit = habit;

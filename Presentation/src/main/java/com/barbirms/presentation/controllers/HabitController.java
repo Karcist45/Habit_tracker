@@ -1,7 +1,6 @@
 package com.barbirms.presentation.controllers;
 
 import com.barbirms.service.DTOs.HabitDTO;
-import com.barbirms.service.DTOs.HabitRecordDTO;
 import com.barbirms.service.interfaces.HabitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

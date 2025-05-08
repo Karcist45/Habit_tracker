@@ -21,6 +21,11 @@ public class HabitRecordController {
         habitRecordService.RegisterHabit(habitName, habitOwner);
     }
 
+    @GetMapping("/fake-get/user/{habitOwner}/habit/{habitName}/records")
+    public void FakeGetRegisterHabit(@PathVariable String habitName, @PathVariable String habitOwner) {
+        habitRecordService.RegisterHabit(habitName, habitOwner);
+    }
+
     @GetMapping("user/{habitOwner}/habit/{habitName}/records")
     public List<HabitRecordDTO> getHabitRecords(@PathVariable String habitOwner, @PathVariable String habitName) {
         return habitRecordService.getHabitRecords(habitOwner, habitName);

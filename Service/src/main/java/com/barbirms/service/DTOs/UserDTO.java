@@ -9,6 +9,7 @@ import java.util.List;
 public class UserDTO {
     public Long id;
     public String username;
+    public String email;
     public int password;
     public List<Habit> habits;
 
@@ -17,5 +18,6 @@ public class UserDTO {
         username = user.getUsername();
         password = user.getPassword();
         habits = user.getHabits();
+        email = user.getEmail();
     }
 }

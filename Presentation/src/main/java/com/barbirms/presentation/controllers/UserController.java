@@ -12,9 +12,9 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/users/{username}/{password}")
-    public void AddUser(@PathVariable String username, @PathVariable String password) {
-        userService.CreateUser(username, password);
+    @PostMapping("/users/{username}/{password}/{email}")
+    public void AddUser(@PathVariable String username, @PathVariable String password, @PathVariable String email) {
+        userService.CreateUser(username, password, email);
     }
 
     @GetMapping("/users/{username}")

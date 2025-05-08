@@ -10,6 +10,7 @@ import com.barbirms.service.DTOs.HabitRecordDTO;
 import com.barbirms.service.DTOs.HabitStatsDTO;
 import com.barbirms.service.interfaces.HabitRecordService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -47,7 +48,6 @@ public class HabitRecordServiceImpl implements HabitRecordService {
     public HabitStatsDTO getHabitStats(String username, String habitName) {
         Habit habit = _habitRepository.
                 findAllByOwnerAndName(_userRepository.getUserByUsername(username), habitName).getFirst();
-
         List<LocalDate> completedDates = _habitRecordRepository
                 .findAllByHabitOrderByTimestampAsc(habit)
                 .stream()

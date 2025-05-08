@@ -1,9 +1,6 @@
 package com.barbirms.service.interfaces;
 
-import com.barbirms.infrastructure.entities.Habit;
-import com.barbirms.infrastructure.entities.HabitRecord;
 import com.barbirms.service.DTOs.HabitDTO;
-import com.barbirms.service.DTOs.HabitRecordDTO;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
